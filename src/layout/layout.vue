@@ -15,7 +15,7 @@
           <!-- <img v-else :src="`${$baseUrl}image/theme/${themeActiveSetting.name}/logo/all.png`"> -->
         </router-link>
         <div class="logo-font" >
-          Hawassa District Government Service Appointment Platform
+          HAWASSA DISTRICT GOVERNMENT SERVICE APPOINTMENT PLATFORM
         </div>
          </div>
          <div class="menu-button">
@@ -220,7 +220,7 @@ handleClose(done) {
 }
 
 .logo-font {
-  min-width: 800px;
+  min-width: 710px;
   text-transform: uppercase;
   // letter-spacing: .2em;
   // font-size: 22px;
@@ -228,6 +228,7 @@ handleClose(done) {
   font-weight: 800;
   line-height: 60px;
   height: 60px;
+  font-size: 15px;
   @media  (max-width: 450px) {
     // font-size: 16px;
     margin-left: -10px;

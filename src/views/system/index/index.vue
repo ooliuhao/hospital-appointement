@@ -227,8 +227,8 @@ export default {
 .auto-container {
     position: static;
     max-width: 1210px;
-    padding: 0px 200px;
-    margin: 0 auto;
+    padding: 0px 80px; /* reduce side padding */
+    margin: 0;
 }
 .content {
     position: relative;

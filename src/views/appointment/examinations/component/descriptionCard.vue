@@ -8,7 +8,7 @@
           '--background-image': `url(${cardInfo.backgroundImage})`,
         }">
         <div class="card-name-class">
-          <img :src="cardInfo.iconImage" v-if="cardInfo.iconImage" style="height: 160%; margin-right: 6px"/>
+          <img :src="cardInfo.iconImage" v-if="cardInfo.iconImage" style="height: 24px; margin-right: 6px"/>
           <!-- <img :src="iconImageProp()"  v-if="cardInfo.iconImage" style="height: 160%; margin-right: 6px"/> -->
           <!-- <img src="@/assets/image/background/physical/logo/baby-care-logo.png"  v-if="cardInfo.iconImage" style="height: 160%; margin-right: 6px"/> -->
           <span> {{ cardInfo.name }} </span>
@@ -102,7 +102,8 @@ export default {
 <style lang='scss' scoped>
 .card-info-class {
   border-radius: 6px;
-  width: 370px;
+  width: 380px;
+  height: 520px; /* unify card height */
 }
 .button-class {
   &:hover {
@@ -171,13 +172,18 @@ export default {
   font-weight: bold;
   padding: 10px;
   background-color: #ebeef580;
-  height: 18px;
+  min-height: 68px; /* ensure space for long title */
+  line-height: 1.2;
   font-size: 18px;
+  text-align: center;
+  white-space: normal;
 }
 .word-class {
   padding: 20px;
   word-break: break-word;
   background-color: #ffffff5c;
+  max-height: 200px; /* keep consistent card height */
+  overflow: auto;
 }
 
 .card-footer {

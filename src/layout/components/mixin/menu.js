@@ -13,7 +13,7 @@ export default {
           path: index
         })
       }
-      if(this.handleDrawer !==null){
+      if (typeof this.handleDrawer === 'function') {
         this.handleDrawer(false)
       }
      

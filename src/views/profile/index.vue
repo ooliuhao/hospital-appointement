@@ -6,10 +6,10 @@
       <el-button @click="openHistoryAppointment" type="primary" circle icon="iconfont hospital-iconico_yuyueguanli_fangjianyuyue" title="History Appointment"></el-button>
     </div>
     <el-collapse accordion v-model="activeName" @change="personChange">
-      <el-collapse-item v-if="refresh" :title="currentLoginInfo.name + ' (Me)'" :name="currentLoginInfo.id">
+      <el-collapse-item v-if="refresh && currentLoginInfo && currentLoginInfo.id" :title="(currentLoginInfo && currentLoginInfo.name) ? (currentLoginInfo.name + ' (Me)') : 'Me'" :name="currentLoginInfo.id">
         <person-card :personInfo="currentLoginInfo" ref="personCardRef" :isLoginUser="true" @reloadData="reloadData" ></person-card>
       </el-collapse-item>
-      <el-collapse-item v-for="(item, index) in personList" :key="index" :title="item.name" :name="item.id" >
+      <el-collapse-item v-for="(item, index) in validPersonList" :key="index" :title="item.name || 'Unnamed'" :name="item.id" >
         <person-card :personInfo="item" :amPatient="true"></person-card>
       </el-collapse-item>
       <el-collapse-item v-if="openCreateProfile"  title="New Profile" name="new" >
@@ -35,7 +35,7 @@ export default {
       openCreateProfile:false,
       user: store.state.auth.user,
       personList: [],
-      currentLoginInfo: {},
+      currentLoginInfo: null,
       activeName: '',
       refresh: true,
       dialogVisible: false,
@@ -75,7 +75,11 @@ export default {
     personCard
   },
 
-  computed: {},
+  computed: {
+    validPersonList() {
+      return Array.isArray(this.personList) ? this.personList.filter(p => p && p.id) : []
+    }
+  },
 
   mounted () {
     this.init()
@@ -106,12 +110,13 @@ export default {
         this.$nextTick(() => {
           this.refresh = true; // 显示子组件，触发重新渲染
         });
-        this.currentLoginInfo = res[0]
-        if(res[0].name == null) {
+        const userInfo = Array.isArray(res) ? res[0] : res && res.data ? res.data : res
+        this.currentLoginInfo = userInfo || {}
+        if(this.currentLoginInfo && this.currentLoginInfo.name == null) {
           this.currentLoginInfo.name = 'Undefined'
         }
-        this.currentLoginInfo.nationalityValue = res[0].nationalityValue,
-        this.activeName = this.currentLoginInfo.id
+        this.currentLoginInfo.nationalityValue = this.currentLoginInfo.nationalityValue
+        this.activeName = this.currentLoginInfo.id || ''
 
       }).catch(e => {
         console.log(e)

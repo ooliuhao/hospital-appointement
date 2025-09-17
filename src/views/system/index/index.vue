@@ -155,7 +155,7 @@ export default {
 </script>
 <style lang='scss' scoped>
 .main-page {
-  background-image: url('/public/image/background/main-bg-2.png');
+  background-image: url('/public/image/background/main-bg.jpg');
   background-size: cover; /* or 'contain' */
   background-repeat: no-repeat;
   background-position: center center;

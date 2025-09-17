@@ -23,8 +23,8 @@
         </div>
         <br>
         <div class="card-footer">
-          <span class="price-class">{{ (cardInfo.price == null || cardInfo.price == '') ? '?' :priceFormat }}</span>
-          <span class="price-unit-class">{{ (cardInfo.unit == null || cardInfo.unit == '') ? 'ETB' : cardInfo.unit }}</span>
+<!--          <span class="price-class">{{ (cardInfo.price == null || cardInfo.price == '') ? '?' :priceFormat }}</span>-->
+<!--          <span class="price-unit-class">{{ (cardInfo.unit == null || cardInfo.unit == '') ? 'ETB' : cardInfo.unit }}</span>-->
           <el-button class="button-class" @click="handleAppointmentClick(cardInfo)" type="primary">APPOINTMENT</el-button>
         </div>
       </div>

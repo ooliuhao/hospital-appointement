@@ -10,7 +10,7 @@
               @change="vaccineChange"></el-option>
           </el-select>
         </el-form-item>
-        <el-form-item label="Patient Name" prop="patientName">
+        <el-form-item label="Applicant Name" prop="applicantname">
           <el-select v-model="orderForm.patientName" placeholder="Please input name" style="width: 85%">
             <el-option v-for="previously_created in userNames" :key="previously_created.id"
               :label="previously_created.name" :value="previously_created.id"></el-option>

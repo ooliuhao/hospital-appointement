@@ -18,13 +18,13 @@
           </el-form-item>
        
          
-          <el-form-item label="Doctor" prop="doctor">
-            <el-select @change="handleDoctorChange" v-model="orderForm.doctor" placeholder="Please select doctor"
-              style="width: 100%">
-              <el-option v-for="(item, index) in doctorList" :label="item.name" :value="item.id" :key="index"></el-option>
-            </el-select>
-          </el-form-item>
-          <el-form-item label="Patient Name" prop="patientName">
+<!--          <el-form-item label="Doctor" prop="doctor">-->
+<!--            <el-select @change="handleDoctorChange" v-model="orderForm.doctor" placeholder="Please select doctor"-->
+<!--              style="width: 100%">-->
+<!--              <el-option v-for="(item, index) in doctorList" :label="item.name" :value="item.id" :key="index"></el-option>-->
+<!--            </el-select>-->
+<!--          </el-form-item>-->
+          <el-form-item label="Applicant Name" prop="ApplicantName">
             <el-select v-model="orderForm.patientName" placeholder="Please input name" style="width: 90%">
               <el-option v-for="previously_created in userNames" :key="previously_created.id"
                 :label="previously_created.name" :value="previously_created.id"></el-option>

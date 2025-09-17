@@ -143,8 +143,8 @@ export default {
           overHidden: true,
           width: 150,
         }, {
-          label: 'Patient',
-          prop: 'patient',
+          label: 'Applicant',
+          prop: 'Applicant',
           search: true,
         }, {
           label: 'Type',
@@ -168,11 +168,8 @@ export default {
         }, {
           label: 'Appointment Time',
           prop: 'appointmentTime',
-        }, {
-          label: 'Status',
-          prop: 'status',
-
-        }, {
+        },
+          {
           label: 'Create Time',
           prop: 'createdTime',
           sortable: true,

@@ -4,7 +4,7 @@
       <input type="checkbox" id="flip">
       <div class="cover">
         <div class="front">
-          <img src="@/assets/login_page/Login_page.jpg" alt="">
+          <img src="@/assets/login_page/Login_page.png" alt="">
         </div>
       </div>
       <div class="forms">

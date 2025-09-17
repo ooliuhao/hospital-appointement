@@ -10,12 +10,12 @@
           :class="{'logo-group': true, 'logo-transition': asideTransition}"
           :style="{width: asideCollapse ? asideWidthCollapse : asideWidth}"
           >
-          <img v-if="asideCollapse" src="/image/logo/silkroad.png">
+          <img v-if="asideCollapse" src="/image/logo/hawassa.png">
           <!-- <img v-if="asideCollapse" :src="`${$baseUrl}image/theme/${themeActiveSetting.name}/logo/icon-only.png`"> -->
           <!-- <img v-else :src="`${$baseUrl}image/theme/${themeActiveSetting.name}/logo/all.png`"> -->
         </router-link>
         <div class="logo-font" >
-          A.A Silk Road General Hospital
+          Hawassa District Government Service Appointment Platform
         </div>
          </div>
          <div class="menu-button">
@@ -46,7 +46,7 @@
           :class="{'logo-group': true, 'logo-transition': asideTransition}"
           :style="{width: asideCollapse ? asideWidthCollapse : asideWidth}"
           >
-          <img v-if="asideCollapse" src="/image/logo/silkroad.png">
+          <img v-if="asideCollapse" src="/image/logo/hawassa.png">
           <!-- <img v-if="asideCollapse" :src="`${$baseUrl}image/theme/${themeActiveSetting.name}/logo/icon-only.png`"> -->
           <!-- <img v-else :src="`${$baseUrl}image/theme/${themeActiveSetting.name}/logo/all.png`"> -->
         </router-link>
@@ -181,7 +181,7 @@ handleClose(done) {
   width: 100%;
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
+  min-height: 80vh;
 
  
 }
@@ -220,7 +220,7 @@ handleClose(done) {
 }
 
 .logo-font {
-  min-width: 200px;
+  min-width: 800px;
   text-transform: uppercase;
   // letter-spacing: .2em;
   // font-size: 22px;

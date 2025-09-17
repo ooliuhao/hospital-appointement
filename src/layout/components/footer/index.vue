@@ -9,114 +9,114 @@
     
       <footer class="footer1">
         <div class="footer1__top">
-          <div class="content_box_100_50">
-            <div class="container-fluid">
-              <div class="row" >
-                <div class="col-md-8 col-lg-4 " style="padding-top: 30px;">
-                  <div class="footer1__item footer1__item--01 mb-50 " >
-                    <div class="footer1__item--logo">
-                      <img src="../../../assets/img/logo/silkroad.jpeg" alt="Logo" style="max-width: 40%; height: auto;">
-                    </div>
-                    <ul class="footer_list_1">
-                      <li><a href="https://goo.gl/maps/73bvWr1F7x2TiRNS6" target="_blank" style="background-color: inherit; text-decoration: none;">
-                        <i class="el-icon-location" style="font-size: 16px; color: white !important; margin-right:10px;"></i>
-                        <span>Next to Sarbet Gibson Academy, opposite site of the Vatican Embassy, Egypt Road.</span></a></li>
-                      <!-- <li><span>Addis Ababa, Ethiopia</span></li> -->
-                      <li > <i class="el-icon-chat-square" style="font-size: 16px; color: white !important; margin-right:10px;"></i> <span>silkroadhospital@afeiholding.com</span></li>
-                      <li>  <i class="el-icon-phone" style="font-size: 16px; color: white !important; margin-right:10px;"></i><span>Reception: +251 93 661 0666</span></li>
-                      <li>  <i class="el-icon-phone" style="font-size: 16px; color: white !important; margin-right:10px;"></i> <span>Emergency: +251 96 904 4519</span></li>
-                    </ul>
-                   
-                 
-  
-                  </div>
-                </div>
-                <div class="col-md-8 col-lg-4" style="padding-top: 30px;">
-                  <div class="footer1__item footer1__item--02 mb-50">
-                    <h3> Our Services.</h3>
-                    <div style="display: flex; " class="list_services">
-                    <ul style="" >
-                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Laparoscopy Surgery </a></li>
-                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Orthopedic Surgery</a></li>
-                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Neurosurgery</a></li>
-                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Urology</a></li>
-                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Anesthesiology</a></li>
-                      <li><a href="#" style="background-color: inherit; text-decoration: none;">ICU </a></li>
-                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Internal Medicine</a></li>
-                      <li><a href="#" style="background-color: inherit; text-decoration: none;"> Neurology</a></li>
-                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Cardiology</a></li>
-                    </ul>
-                    <ul style="">
-                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Endocrinology </a></li>
-                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Gastroenterology</a></li>
-                      <li><a href="#" style="background-color: inherit; text-decoration: none;">GYN/OB</a></li>
-                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Pediatrics</a></li>
-                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Dentistry</a></li>
-                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Ophthalmology</a></li>
-                      <li><a href="#" style="background-color: inherit; text-decoration: none;">ENT</a></li>
-                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Dermatovenerology</a></li>
-                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Physiotherapy</a></li>
-                    </ul>
-                  </div>
-                  </div>
-                </div>
-                <!-- <div class="col-md-6 col-lg-3">
-                  <nav>
-                    <div class="footer1__item footer1__item--03 mb-50">
-                      <h3>Helpful Links.</h3>
-                      <ul>
-                        <li><a href="#" style="background-color: inherit;">Who We Are</a></li>
-                        <li><a href="#" style="background-color: inherit;">Our Team Mission History</a></li>
-                        <li><a href="#" style="background-color: inherit;">Awards since 1990 - 2023</a></li>
-                        <li><a href="#" style="background-color: inherit;">Experience Purpose</a></li>
-                        <li><a href="#" style="background-color: inherit;">Success Story</a></li>
-                        <li><a href="#" style="background-color: inherit;">Specialized Support</a></li>
-                      </ul>
-                    </div>
-                  </nav>
-                </div> -->
-                <div class="col-md-8 col-lg-4" style="padding-top: 30px;">
-                  <div class="footer1__item footer1__item--04 mb-50">
-                    <h3>Pictures.</h3>
-                    <div class="footer1__item--instagram">
-                      <a href="#"><img src="../../../assets/img/background/bg-06.jpg" alt="Image"></a>
-                      <a href="#"><img src="../../../assets/img/background/bg-07.jpg" alt="Image"></a>
-                      <a href="#"><img src="../../../assets/img/background/bg-08.jpg" alt="Image"></a>
-                      <a href="#"><img src="../../../assets/img/background/bg-09.jpg" alt="Image"></a>
-                      <a href="#"><img src="../../../assets/img/background/bg-10.jpg" alt="Image"></a>
-                      <a href="#"><img src="../../../assets/img/background/bg-11.jpg" alt="Image"></a>
-                    </div>
-                  
-  
-  
-                  </div>
-                  <span class="subscribe" >Subscribe to Recieve updates</span>
-         
-                    
-         <div class="footer1__item--email">
-           <input v-model="email" placeholder="Email address" type="email" name="email">
-           <button type="submit" @click="subscribe" style="font-weight: 80;font-size: x-large; height: 55px; width: 130px;">Subscribe</button>
-           <div v-if="isLoading">
-        
-             <p >SilkRoad...</p>
-           </div>
-           <!-- <p v-if="succuss" style="color:white;margin-top: 5px;">--You subscribed successfully.--</p> -->
-           <p v-if="errorHappen && !succuss" style="color:red;">{{ error }}</p>
+<!--          <div class="content_box_100_50">-->
+<!--            <div class="container-fluid">-->
+<!--              <div class="row" >-->
+<!--&lt;!&ndash;                <div class="col-md-8 col-lg-4 " style="padding-top: 30px;">&ndash;&gt;-->
+<!--&lt;!&ndash;                  <div class="footer1__item footer1__item&#45;&#45;01 mb-50 " >&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="footer1__item&#45;&#45;logo">&ndash;&gt;-->
+<!--&lt;!&ndash;                      <img src="../../../assets/img/logo/silkroad.jpeg" alt="Logo" style="max-width: 40%; height: auto;">&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ul class="footer_list_1">&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li><a href="https://goo.gl/maps/73bvWr1F7x2TiRNS6" target="_blank" style="background-color: inherit; text-decoration: none;">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <i class="el-icon-location" style="font-size: 16px; color: white !important; margin-right:10px;"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <span>Next to Sarbet Gibson Academy, opposite site of the Vatican Embassy, Egypt Road.</span></a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                      &lt;!&ndash; <li><span>Addis Ababa, Ethiopia</span></li> &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li > <i class="el-icon-chat-square" style="font-size: 16px; color: white !important; margin-right:10px;"></i> <span>silkroadhospital@afeiholding.com</span></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li>  <i class="el-icon-phone" style="font-size: 16px; color: white !important; margin-right:10px;"></i><span>Reception: +251 93 661 0666</span></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li>  <i class="el-icon-phone" style="font-size: 16px; color: white !important; margin-right:10px;"></i> <span>Emergency: +251 96 904 4519</span></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                   &ndash;&gt;-->
+<!--&lt;!&ndash;                 &ndash;&gt;-->
+<!--&lt;!&ndash;  &ndash;&gt;-->
+<!--&lt;!&ndash;                  </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="col-md-8 col-lg-4" style="padding-top: 30px;">&ndash;&gt;-->
+<!--&lt;!&ndash;                  <div class="footer1__item footer1__item&#45;&#45;02 mb-50">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <h3> Our Services.</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div style="display: flex; " class="list_services">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ul style="" >&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Laparoscopy Surgery </a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Orthopedic Surgery</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Neurosurgery</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Urology</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Anesthesiology</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li><a href="#" style="background-color: inherit; text-decoration: none;">ICU </a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Internal Medicine</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li><a href="#" style="background-color: inherit; text-decoration: none;"> Neurology</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Cardiology</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ul style="">&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Endocrinology </a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Gastroenterology</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li><a href="#" style="background-color: inherit; text-decoration: none;">GYN/OB</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Pediatrics</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Dentistry</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Ophthalmology</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li><a href="#" style="background-color: inherit; text-decoration: none;">ENT</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Dermatovenerology</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <li><a href="#" style="background-color: inherit; text-decoration: none;">Physiotherapy</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                  </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                  </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--                &lt;!&ndash; <div class="col-md-6 col-lg-3">-->
+<!--                  <nav>-->
+<!--                    <div class="footer1__item footer1__item&#45;&#45;03 mb-50">-->
+<!--                      <h3>Helpful Links.</h3>-->
+<!--                      <ul>-->
+<!--                        <li><a href="#" style="background-color: inherit;">Who We Are</a></li>-->
+<!--                        <li><a href="#" style="background-color: inherit;">Our Team Mission History</a></li>-->
+<!--                        <li><a href="#" style="background-color: inherit;">Awards since 1990 - 2023</a></li>-->
+<!--                        <li><a href="#" style="background-color: inherit;">Experience Purpose</a></li>-->
+<!--                        <li><a href="#" style="background-color: inherit;">Success Story</a></li>-->
+<!--                        <li><a href="#" style="background-color: inherit;">Specialized Support</a></li>-->
+<!--                      </ul>-->
+<!--                    </div>-->
+<!--                  </nav>-->
+<!--                </div> &ndash;&gt;-->
+<!--                <div class="col-md-8 col-lg-4" style="padding-top: 30px;">-->
+<!--&lt;!&ndash;                  <div class="footer1__item footer1__item&#45;&#45;04 mb-50">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <h3>Pictures.</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="footer1__item&#45;&#45;instagram">&ndash;&gt;-->
+<!--&lt;!&ndash;                      <a href="#"><img src="../../../assets/img/background/bg-06.jpg" alt="Image"></a>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <a href="#"><img src="../../../assets/img/background/bg-07.jpg" alt="Image"></a>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <a href="#"><img src="../../../assets/img/background/bg-08.jpg" alt="Image"></a>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <a href="#"><img src="../../../assets/img/background/bg-09.jpg" alt="Image"></a>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <a href="#"><img src="../../../assets/img/background/bg-10.jpg" alt="Image"></a>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <a href="#"><img src="../../../assets/img/background/bg-11.jpg" alt="Image"></a>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                  &ndash;&gt;-->
+<!--&lt;!&ndash;  &ndash;&gt;-->
+<!--&lt;!&ndash;  &ndash;&gt;-->
+<!--&lt;!&ndash;                  </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                  <span class="subscribe" >Subscribe to Recieve updates</span>&ndash;&gt;-->
 
-         </div>
 
-                </div>
-              </div>
-            </div>
-          </div>
+<!--         <div class="footer1__item&#45;&#45;email">-->
+<!--           <input v-model="email" placeholder="Email address" type="email" name="email">-->
+<!--           <button type="submit" @click="subscribe" style="font-weight: 80;font-size: x-large; height: 55px; width: 130px;">Subscribe</button>-->
+<!--           <div v-if="isLoading">-->
+
+<!--             <p >SilkRoad...</p>-->
+<!--           </div>-->
+<!--           &lt;!&ndash; <p v-if="succuss" style="color:white;margin-top: 5px;">&#45;&#45;You subscribed successfully.&#45;&#45;</p> &ndash;&gt;-->
+<!--           <p v-if="errorHappen && !succuss" style="color:red;">{{ error }}</p>-->
+
+<!--         </div>-->
+
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
         </div>
         <div class="footer1__bottom">
-          <div class="container">
+          <div class="container-fluid">
             <!-- <div class="row" style="display: flex;align-content: center;place-content: center space-around;" > -->
-            <div class="row" style="display: flex;align-content: center;justify-content: space-around;">
-              <div class="col-lg-6 text-center">
+            <div class="row" style="display: flex;align-content: center;justify-content: center;">
+              <div class="col-12 text-center">
                 <!-- <span style="color: aliceblue;">copyright@Silk Road Hospital</span><br> -->
-                <span style="color: aliceblue; ">Powered by <img src="../../../assets/img/logo/footer_inspur.png" width="200px" height="" style="padding-left: 12px;  "/></span>
+                <span class="powered-by">Powered by <img class="powered-logo" src="../../../assets/img/logo/footer_inspur.png"/></span>
               </div>
               <!-- <div class="col-lg-6 text-center text-lg-left" >              
                 <div class="footer1__social text-center text-lg-right">
@@ -570,7 +570,27 @@ ul li {
 }
 
 .footer1__bottom {
-  padding: 20px 0px 20px;
+  padding: 40px 0px 40px;
+  width: 100%;
+}
+
+.powered-by {
+  color: aliceblue;
+  font-size: 30px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+}
+
+.powered-logo {
+  height: 40px;
+  width: auto;
+  margin-left: 14px;
+}
+
+@media only screen and (max-width: 767px) {
+  .powered-by { font-size: 18px; }
+  .powered-logo { height: 32px; }
 }
 
 .footer1__social a {

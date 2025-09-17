@@ -13,12 +13,12 @@
 
   <div class="content">
 
-    <div class="title">WELCOME TO ADDIS ABABA  SILK ROAD</div>
+    <div class="title">WELCOME TO HAWASSA DISTRICT</div>
 
-    <h2 class="header">Take Care of Your Health</h2>
+    <h2 class="header">We Will Provide You With The Best Service</h2>
 
 
-    <div class="text">We're always available for our Patients with emergent problems. You can easily reach us 24/7 via the phone number below:</div>
+    <div class="text">We are always available to assist citizens who need assistance. You can contact us 24/7 at the following phone number:</div>
   </div>
 
 </div>
@@ -75,8 +75,8 @@
        
         
       </div>
-      <!-- <el-image src="/image/background/main-bg.jpg" fit="cover" style="height: 100%;"></el-image> -->
-      <!-- <el-image url="/public/image/background/main-bg.jpg"></el-image> -->
+      <!-- <el-image src="/image/background/main-bg.png" fit="cover" style="height: 100%;"></el-image> -->
+      <!-- <el-image url="/public/image/background/main-bg.png"></el-image> -->
     </div>
    
 
@@ -155,7 +155,7 @@ export default {
 </script>
 <style lang='scss' scoped>
 .main-page {
-  background-image: url('/public/image/background/main-bg.jpg');
+  background-image: url('/public/image/background/main-bg-2.png');
   background-size: cover; /* or 'contain' */
   background-repeat: no-repeat;
   background-position: center center;
@@ -227,7 +227,7 @@ export default {
 .auto-container {
     position: static;
     max-width: 1210px;
-    padding: 0px 20px;
+    padding: 0px 200px;
     margin: 0 auto;
 }
 .content {
@@ -246,7 +246,7 @@ export default {
     text-align: start;
     margin: 40px 0px;
     @media  (min-width: 600px) {
-      font-size: 70px;
+      font-size: 32px;
   }
 }
 .title {

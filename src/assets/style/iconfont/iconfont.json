@@ -1,0 +1,170 @@
+{
+  "id": "4116624",
+  "name": "hospital",
+  "font_family": "iconfont",
+  "css_prefix_text": "hospital-icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1201456",
+      "name": "cancel",
+      "font_class": "cancel1",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "5832964",
+      "name": "cancel",
+      "font_class": "cancel",
+      "unicode": "e70b",
+      "unicode_decimal": 59147
+    },
+    {
+      "icon_id": "212769",
+      "name": "password ",
+      "font_class": "password",
+      "unicode": "ea32",
+      "unicode_decimal": 59954
+    },
+    {
+      "icon_id": "24492831",
+      "name": "Password",
+      "font_class": "Password",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "8720455",
+      "name": "哭，404",
+      "font_class": "ku",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "15168276",
+      "name": "404",
+      "font_class": "yepian",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "6429415",
+      "name": "联系人",
+      "font_class": "lianxiren",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "4933869",
+      "name": "点",
+      "font_class": "dian",
+      "unicode": "ec1e",
+      "unicode_decimal": 60446
+    },
+    {
+      "icon_id": "9066652",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e88b",
+      "unicode_decimal": 59531
+    },
+    {
+      "icon_id": "4503701",
+      "name": "profile",
+      "font_class": "profile",
+      "unicode": "e6db",
+      "unicode_decimal": 59099
+    },
+    {
+      "icon_id": "5919781",
+      "name": "体检",
+      "font_class": "tijian",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "6607850",
+      "name": "ico_预约管理_房间预约",
+      "font_class": "ico_yuyueguanli_fangjianyuyue",
+      "unicode": "e948",
+      "unicode_decimal": 59720
+    },
+    {
+      "icon_id": "7693983",
+      "name": "疫苗记录",
+      "font_class": "yimiaojilu",
+      "unicode": "eb4c",
+      "unicode_decimal": 60236
+    },
+    {
+      "icon_id": "8827143",
+      "name": "login",
+      "font_class": "login",
+      "unicode": "e93c",
+      "unicode_decimal": 59708
+    },
+    {
+      "icon_id": "8827186",
+      "name": "logout",
+      "font_class": "logout",
+      "unicode": "e93f",
+      "unicode_decimal": 59711
+    },
+    {
+      "icon_id": "12004966",
+      "name": "Logout",
+      "font_class": "Logout",
+      "unicode": "eaae",
+      "unicode_decimal": 60078
+    },
+    {
+      "icon_id": "12004971",
+      "name": "Login",
+      "font_class": "Login",
+      "unicode": "eaaf",
+      "unicode_decimal": 60079
+    },
+    {
+      "icon_id": "17605458",
+      "name": "检查",
+      "font_class": "jiancha",
+      "unicode": "e814",
+      "unicode_decimal": 59412
+    },
+    {
+      "icon_id": "1665033",
+      "name": "send",
+      "font_class": "send",
+      "unicode": "e8a6",
+      "unicode_decimal": 59558
+    },
+    {
+      "icon_id": "9495519",
+      "name": "留言",
+      "font_class": "liuyan",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "5387604",
+      "name": "取消全屏",
+      "font_class": "quxiaoquanping",
+      "unicode": "eb10",
+      "unicode_decimal": 60176
+    },
+    {
+      "icon_id": "5387606",
+      "name": "全屏",
+      "font_class": "quanping",
+      "unicode": "eb11",
+      "unicode_decimal": 60177
+    },
+    {
+      "icon_id": "1898956",
+      "name": "power-off",
+      "font_class": "power-off",
+      "unicode": "e6fb",
+      "unicode_decimal": 59131
+    }
+  ]
+}

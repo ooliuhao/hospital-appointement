@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4116624 */
+  src: url('iconfont.woff2?t=1688304104633') format('woff2'),
+       url('iconfont.woff?t=1688304104633') format('woff'),
+       url('iconfont.ttf?t=1688304104633') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hospital-iconcancel1:before {
+  content: "\e600";
+}
+
+.hospital-iconcancel:before {
+  content: "\e70b";
+}
+
+.hospital-iconpassword:before {
+  content: "\ea32";
+}
+
+.hospital-iconPassword:before {
+  content: "\e619";
+}
+
+.hospital-iconku:before {
+  content: "\e617";
+}
+
+.hospital-iconyepian:before {
+  content: "\e61d";
+}
+
+.hospital-iconlianxiren:before {
+  content: "\e618";
+}
+
+.hospital-icondian:before {
+  content: "\ec1e";
+}
+
+.hospital-iconhome:before {
+  content: "\e88b";
+}
+
+.hospital-iconprofile:before {
+  content: "\e6db";
+}
+
+.hospital-icontijian:before {
+  content: "\e61e";
+}
+
+.hospital-iconico_yuyueguanli_fangjianyuyue:before {
+  content: "\e948";
+}
+
+.hospital-iconyimiaojilu:before {
+  content: "\eb4c";
+}
+
+.hospital-iconlogin:before {
+  content: "\e93c";
+}
+
+.hospital-iconlogout:before {
+  content: "\e93f";
+}
+
+.hospital-iconLogout:before {
+  content: "\eaae";
+}
+
+.hospital-iconLogin:before {
+  content: "\eaaf";
+}
+
+.hospital-iconjiancha:before {
+  content: "\e814";
+}
+
+.hospital-iconsend:before {
+  content: "\e8a6";
+}
+
+.hospital-iconliuyan:before {
+  content: "\e62c";
+}
+
+.hospital-iconquxiaoquanping:before {
+  content: "\eb10";
+}
+
+.hospital-iconquanping:before {
+  content: "\eb11";
+}
+
+.hospital-iconpower-off:before {
+  content: "\e6fb";
+}
+

@@ -26,10 +26,10 @@
           <!-- <span class="price-class">{{ (cardInfo.price == null || cardInfo.price == '') ? '?' :priceFormat }}</span>
           <span class="price-unit-class">{{ (cardInfo.unit == null || cardInfo.unit == '') ? 'ETB' : cardInfo.unit }}</span> -->
           <!-- <a class="no-underline" :href="detailPdfLink" target="_blank"> -->
-            <div class="more-info-container" @click="openDialog">
-  <span class="detail-text"><i class="el-icon-info more-info" title="More Information" ></i> Details</span>
-  
-</div>
+<!--            <div class="more-info-container" @click="openDialog">-->
+<!--  <span class="detail-text"><i class="el-icon-info more-info" title="More Information" ></i> Details</span>-->
+<!--  -->
+<!--</div>-->
           <!-- </a>Detail -->
        
        

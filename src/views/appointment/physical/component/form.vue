@@ -4,12 +4,17 @@
     <div class="innerPage">
       <el-form :model="orderForm" :disabled="isView" :rules="rules" ref="orderForm" label-width="150px"
         class="demo-orderForm">
-        <el-form-item label="Physical Exam" prop="physical_exam">
-          <el-select v-model="orderForm.physical_exam" placeholder="Please select physical exam" style="width: 100%"
-            @change="handlePhysicalExamChange">
-            <el-option v-for="(item, index) in physicalExamsList" :label="item.name" :value="item.id" :key="index">
-            </el-option>
-          </el-select>
+<!--        <el-form-item label="Physical Exam" prop="physical_exam">-->
+<!--          <el-select v-model="orderForm.physical_exam" placeholder="Please select physical exam" style="width: 100%"-->
+<!--            @change="handlePhysicalExamChange">-->
+<!--            <el-option v-for="(item, index) in physicalExamsList" :label="item.name" :value="item.id" :key="index">-->
+<!--            </el-option>-->
+<!--          </el-select>-->
+<!--        </el-form-item>-->
+        <h5> {{ card.name }} </h5>
+
+        <el-form-item label="Department" prop="department">
+          <el-input v-model="orderForm.department" readonly></el-input>
         </el-form-item>
         <el-form-item label="Applicant Name" prop="ApplicantName">
             <el-select v-model="orderForm.patientName" placeholder="Please input name" style="width: 90%">
@@ -167,6 +172,7 @@ export default {
       userInfo: store.state,
       periodList: [],
       orderForm: {
+        department: 'Central Statistics Agency',
         physical_exam: '',
         patientName: '',
         date: '',
@@ -175,9 +181,14 @@ export default {
         desc: '',
       },
       rules: {
-        physical_exam: [{
+        // physical_exam: [{
+        //   required: true,
+        //   message: 'Please select physical exam',
+        //   trigger: 'change'
+        // }],
+        department: [{
           required: true,
-          message: 'Please select physical exam',
+          message: 'Department is required',
           trigger: 'change'
         }],
         patientName: [{
@@ -226,6 +237,7 @@ export default {
     }
     this.getPhysicalExam()
     this.orderForm.physical_exam = this.card.id,
+    this.orderForm.department = 'Central Statistics Agency',
     this.loginInUserInfo = store.state.auth.user
     this.role = this.loginInUserInfo.roles[0]
     const physical_examination = this.$route.query.id

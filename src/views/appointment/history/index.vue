@@ -144,7 +144,7 @@ export default {
           width: 150,
         }, {
           label: 'Applicant',
-          prop: 'Applicant',
+          prop: 'patient',
           search: true,
         }, {
           label: 'Type',

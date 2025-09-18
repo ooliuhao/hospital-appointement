@@ -10,12 +10,12 @@
           :class="{'logo-group': true, 'logo-transition': asideTransition}"
           :style="{width: asideCollapse ? asideWidthCollapse : asideWidth}"
           >
-          <img v-if="asideCollapse" src="/image/logo/hawassa.png">
+          <img v-if="asideCollapse" src="/appointement/image/logo/hawassa.png">
           <!-- <img v-if="asideCollapse" :src="`${$baseUrl}image/theme/${themeActiveSetting.name}/logo/icon-only.png`"> -->
           <!-- <img v-else :src="`${$baseUrl}image/theme/${themeActiveSetting.name}/logo/all.png`"> -->
         </router-link>
         <div class="logo-font" >
-          HAWASSA DISTRICT GOVERNMENT SERVICE APPOINTMENT PLATFORM
+          HAWASSA GOVERNMENT SERVICE APPOINTMENT PLATFORM
         </div>
          </div>
          <div class="menu-button">
@@ -46,7 +46,7 @@
           :class="{'logo-group': true, 'logo-transition': asideTransition}"
           :style="{width: asideCollapse ? asideWidthCollapse : asideWidth}"
           >
-          <img v-if="asideCollapse" src="/image/logo/hawassa.png">
+          <img v-if="asideCollapse" src="/appointement/image/logo/hawassa.png">
           <!-- <img v-if="asideCollapse" :src="`${$baseUrl}image/theme/${themeActiveSetting.name}/logo/icon-only.png`"> -->
           <!-- <img v-else :src="`${$baseUrl}image/theme/${themeActiveSetting.name}/logo/all.png`"> -->
         </router-link>

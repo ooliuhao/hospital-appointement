@@ -5,15 +5,15 @@
     <div style="" class="home-class-container" flex="main:center cross:center">
      
       <div class="swiper-wrapper">
-      <el-carousel indicator-position="outside" >
-        <el-carousel-item v-for="item in 4" :key="item">
+<!--      <el-carousel indicator-position="outside" >-->
+<!--        <el-carousel-item v-for="item in 4" :key="item">-->
           <div class="swiper-slide slide" >
 
 <div class="auto-container">
 
   <div class="content">
 
-    <div class="title">WELCOME TO HAWASSA DISTRICT</div>
+    <div class="title">WELCOME TO HAWASSA</div>
 
     <h2 class="header">We Will Provide You With The Best Service</h2>
 
@@ -24,8 +24,8 @@
 </div>
 
 </div>
-    </el-carousel-item>
-     </el-carousel>
+<!--    </el-carousel-item>-->
+<!--     </el-carousel>-->
 
 
 </div>
@@ -226,6 +226,7 @@ export default {
 }
 .auto-container {
     position: static;
+    //top: 150px;
     max-width: 1210px;
     padding: 0px 80px; /* reduce side padding */
     margin: 0;

@@ -13,9 +13,9 @@
           <!-- <img src="@/assets/image/background/physical/logo/baby-care-logo.png"  v-if="cardInfo.iconImage" style="height: 160%; margin-right: 6px"/> -->
           <span> {{ cardInfo.name }} </span>
           <!-- <a class="no-underline" href="/docs/physical/Physical Examination Package A.pdf" target="_blank"> -->
-          <a class="no-underline" :href="detailPdfLink" target="_blank">
-            <i class="el-icon-info more-info" title="More Information" @click="getMoreInformation"></i>
-          </a>
+<!--          <a class="no-underline" :href="detailPdfLink" target="_blank">-->
+<!--            <i class="el-icon-info more-info" title="More Information" @click="getMoreInformation"></i>-->
+<!--          </a>-->
         </div>
         <div class="word-class">
           {{ cardInfo.description }}

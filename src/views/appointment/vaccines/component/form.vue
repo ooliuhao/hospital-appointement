@@ -4,11 +4,15 @@
     <div class="innerPage">
       <el-form :model="orderForm" :disabled="isView" :rules="rules" ref="orderForm" label-width="150px"
         class="demo-orderForm">
-        <el-form-item label="Vaccines" prop="vaccine">
-          <el-select v-model="orderForm.vaccine" placeholder="Please select vaccine" style="width: 100%">
-            <el-option v-for="(item, index) in vaccinesList" :label="item.name" :value="item.id" :key="index"
-              @change="vaccineChange"></el-option>
-          </el-select>
+        <h5> {{ card.name }} </h5>
+<!--        <el-form-item label="Vaccines" prop="vaccine">-->
+<!--          <el-select v-model="orderForm.vaccine" placeholder="Please select vaccine" style="width: 100%">-->
+<!--            <el-option v-for="(item, index) in vaccinesList" :label="item.name" :value="item.id" :key="index"-->
+<!--              @change="vaccineChange"></el-option>-->
+<!--          </el-select>-->
+<!--        </el-form-item>-->
+        <el-form-item label="Department" prop="department">
+          <el-input v-model="orderForm.department" readonly></el-input>
         </el-form-item>
         <el-form-item label="Applicant Name" prop="applicantname">
           <el-select v-model="orderForm.patientName" placeholder="Please input name" style="width: 85%">
@@ -125,6 +129,7 @@ export default {
       userInfo: store.state,
       periodList: [],
       orderForm: {
+        department: 'Human Resources and Social Security Bureau', // 默认值
         vaccine: '',
         patientName: '',
         date: '',
@@ -179,14 +184,19 @@ export default {
         }],
       },
       rules: {
-        vaccine: [{
+        // vaccine: [{
+        //   required: true,
+        //   message: 'Please select vaccine',
+        //   trigger: 'change'
+        // }],
+        department: [{
           required: true,
-          message: 'Please select vaccine',
+          message: 'Department is required',
           trigger: 'change'
         }],
         patientName: [{
           required: true,
-          message: 'Please select patient name',
+          message: 'Please select name',
           trigger: 'change'
         }],
         date: [{
@@ -233,6 +243,7 @@ export default {
     this.getVaccines()
     this.getPersonsByCreatedfor()
     this.orderForm.vaccine = this.card.id
+    this.orderForm.department = 'Human Resources and Social Security Bureau'
 
   },
 

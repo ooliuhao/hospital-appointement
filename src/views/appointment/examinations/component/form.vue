@@ -5,15 +5,19 @@
  
         <el-form :model="orderForm" :disabled="isView" :rules="rules" ref="orderForm" label-width="150px"
           class="demo-orderForm">
+
+            <h5> {{ card.name }} </h5>
       
             <el-form-item label="Department" prop="department">
-            <el-select @change="handleDepartmentChange" v-model="orderForm.department" filterable
-              placeholder="Please select department" style="width: 100%">
-              <el-option-group v-for="group in departmentList" :key="group.label" :label="group.label">
-                <el-option v-for="item in group.options" :key="item.value" :label="item.label" :value="item.value">
-              </el-option>
-              </el-option-group>
-            </el-select>
+<!--            <el-select @change="handleDepartmentChange" v-model="orderForm.department" filterable-->
+<!--              placeholder="Please select department" style="width: 100%">-->
+<!--              <el-option-group v-for="group in departmentList" :key="group.label" :label="group.label">-->
+<!--                <el-option v-for="item in group.options" :key="item.value" :label="item.label" :value="item.value">-->
+<!--              </el-option>-->
+<!--              </el-option-group>-->
+<!--            </el-select>-->
+
+              <el-input v-model="orderForm.department" readonly></el-input>
 
           </el-form-item>
        
@@ -164,7 +168,7 @@ export default {
       doctorList: [],
       periodList: [],
       orderForm: {
-        department: '',
+        department: 'Land Bureau',
         doctor: '',
         patientName: '',
         date: '',
@@ -234,7 +238,7 @@ export default {
           return time.getTime() < Date.now();
         },
       },
-      avaliableCount: 0,
+      avaliableCount: 16,
       datePeriod: [],
       doctorDatePeriod: [],
       personCount:0,
@@ -275,7 +279,8 @@ export default {
       this.userNames[0].name = 'Current Login Patient'
     }
     this.getDepartments()
-    this.orderForm.department = this.card.id
+    // this.orderForm.department = this.card.id
+    this.orderForm.department = 'Land Bureau';
     this.orderForm.doctor = this.card.doctor
     this.getCreatedbyUserNames()
     this.getDoctors({ department_id: this.card.id })
